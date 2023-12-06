@@ -125,7 +125,8 @@
         } else {
             _pdfView.autoresizesSubviews = true;
             _pdfView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-            _pdfView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+            _pdfView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
+            _pdfView.pageShadowsEnabled = NO;
 
             BOOL swipeHorizontal = [args[@"swipeHorizontal"] boolValue];
             if (swipeHorizontal) {
